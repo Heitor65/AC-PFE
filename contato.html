@@ -1,85 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style-contato.css">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <title>Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Ibmec</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #08264b; color: #fff; }
+
+    /* ===== Header ===== */
+    .topo {
+      background: #e8f0fa;
+      color: #0a1a2b;
+      border-bottom: 1px solid #d7e2f2;
+      padding: 20px 30px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo-topo img { height: 32px; }
+    .menu { list-style: none; display: flex; gap: 18px; }
+    .menu a { color: #0a1a2b; font-size: 14px; }
+    .botao-topo {
+      background: #f6ac00; color: #0a1a2b;
+      padding: 6px 10px; border-radius: 4px; font-weight: bold;
+    }
+
+    /* ===== Main ===== */
+    .secao-contato { text-align: center; padding: 50px 20px; }
+    .titulo-contato { font-size: 48px; margin-bottom: 10px; }
+    .linha { width: 140px; height: 5px; background: #f2bf68; border: none; margin: 0 auto 30px; }
+
+    .container-contato {
+      background: #fff; color: #000a4a;
+      max-width: 900px; margin: 0 auto; border-radius: 10px; padding: 30px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 30px; position: relative;
+    }
+    .container-contato::before {
+      content: ""; position: absolute; top: 30px; bottom: 30px; left: 50%;
+      width: 3px; background: #f2bf68;
+    }
+
+    /* ===== Form ===== */
+    .formulario { text-align: left; }
+    .campo { margin-bottom: 15px; }
+    label {
+      display: block; margin-bottom: 5px;
+      font-size: 14px; color: #000a4a; text-align: left;
+    }
+    input, textarea {
+      width: 100%; padding: 10px; border: 1.5px solid #000a4a;
+      border-radius: 6px; background: #fff; color: #000a4a;
+    }
+    textarea { resize: vertical; min-height: 100px; }
+    input:focus, textarea:focus { border-color: #f2bf68; outline: none; }
+    .botao-enviar {
+      background: #000a4a; color: #fff; border: none;
+      border-radius: 20px; padding: 10px 20px; cursor: pointer;
+      margin-top: 10px;
+    }
+
+    /* ===== Informações ===== */
+    .informacoes {
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; color: #000a4a; gap: 10px;
+    }
+    .informacoes h2 { font-size: 20px; margin-bottom: 5px; }
+    .informacoes p { font-size: 16px; line-height: 1.6; }
+    .redes { display: flex; gap: 12px; margin-top: 10px; }
+    .redes img { width: 18px; height: 18px; }
+
+    @media (max-width: 800px) {
+      .container-contato { grid-template-columns: 1fr; }
+      .container-contato::before { display: none; }
+      .titulo-contato { font-size: 36px; }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
 
-        <div>
-            <img src="imagens/logo-ibmec.png" alt="Logo da Ibmec">
+  <!-- ===== Cabeçalho ===== -->
+  <header class="topo">
+    <div class="logo-topo">
+      <img src="imagens/logo-ibmec.png" alt="Logo Ibmec">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#" class="botao-topo">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Seção Principal ===== -->
+  <main>
+    <section class="secao-contato">
+      <h1 class="titulo-contato">Contate-nos!</h1>
+      <hr class="linha">
+
+      <div class="container-contato">
+        <!-- Formulário -->
+        <div class="formulario">
+          <form>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome">
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="campo">
+              <label for="numero">Número</label>
+              <input type="tel" id="numero" name="numero">
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-enviar">Contate-nos!</button>
+          </form>
         </div>
 
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cases.html">Cases</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="form.html">Fale conosco</a></li>
-                </ul>
-            </nav>
+        <!-- Informações -->
+        <div class="informacoes">
+          <h2>Informações</h2>
+          <p>emailrandom@ibmec.com</p>
+          <p>+99 999999999</p>
+          <p>endereço aleatório da Ibmec,<br> rua xxx, país xxx</p>
+
+          <div class="redes">
+            <a href="#"><img src="imagens/footer_icones/instagram-brands-solid-full.svg" alt="Instagram"></a>
+            <a href="#"><img src="imagens/footer_icones/facebook-brands-solid-full.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg" alt="WhatsApp"></a>
+          </div>
         </div>
-    </header>
-    <main>
+      </div>
+    </section>
+  </main>
 
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column logo-column">
-                <img src="imagens/logo-ibmec.png" alt="logo da Ibmec" class="footer-logo">
-                <p>Alguma coisa sobre a empresa.</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Navegação</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cases.html">Cases</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="form.html">Fale Conosco</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Contato</h3>
-                <ul>
-                    <li>email@email.com.br</li>
-                    <li>(99) 99999-9999</li>
-                    <li>Rua CR7 vasco 2026</li>
-                </ul>
-                <div class="social-icons">
-                    <a href="#"><img src="imagens/footer_icones/instagram-brands-solid-full.svg" alt="ícone Instagram"></a>
-                    <a href="#"><img src="imagens/footer_icones/facebook-brands-solid-full.svg" alt="ícone Facebook"></a>
-                    <a href="#"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg" alt="ícone Whatsapp"></a>
-                </div>
-            </div>
-
-            <div class="footer-column">
-                <h3>Políticas</h3>
-                <ul>
-                    <li><a href="#">Política de Acessibilidade</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Código de Ética</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Política de Cookies</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-    
 </body>
 </html>
