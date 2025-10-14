@@ -141,9 +141,7 @@
 .cases-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 colunas */
     gap: 30px;
-    /* Espaçamento entre os cards */
     background-color: transparent;
 }
 
@@ -151,7 +149,6 @@
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    /* Garante que a imagem não vaze das bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
@@ -160,9 +157,7 @@
 .case-card img {
     width: 100%;
     height: 150px;
-    /* Altura fixa para as imagens */
     object-fit: cover;
-    /* Garante que a imagem cubra o espaço sem distorcer */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -170,7 +165,6 @@
 .case-content {
     padding: 20px;
     position: relative;
-    /* Necessário para posicionar o botão de seta */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -216,16 +210,13 @@
 
 .relatos h2 {
     color: #E6AD2D;
-    /* Cor dourada do título */
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
 .relato-card {
     max-width: 800px;
-    /* Largura máxima do texto */
     margin: 0 auto;
-    /* Centraliza o card */
 }
 
 .relato-card .quote {
@@ -234,7 +225,6 @@
     line-height: 1.6;
     margin: 0 0 25px 0;
     color: #f0f0f0;
-    /* Cor do texto do relato */
 }
 
 .relato-card .author {
@@ -254,12 +244,11 @@
     height: 12px;
     border-radius: 50%;
     background-color: lightgray
-        /* Cor dos pontos inativos */
 }
 
 .pagination-dots .dot.active {
     background-color: #fff;
-    /* Cor do ponto ativo */
+
 }
 
 @media (max-width: 992px) {
