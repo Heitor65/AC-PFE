@@ -1,3 +1,31 @@
+body {
+    margin: 0%; /* RESET SIMPLES */
+}
+
+/* HEADER*/
+
+.topo {
+  background: #D9D9D9;
+  color: #0a1a2b;
+  border-bottom: 1px solid #d7e2f2;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-topo img { height: 32px; }
+.menu { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; }
+.menu li { list-style: none; }
+.menu a { color: #0a1a2b; font-size: 14px; text-decoration: none; }
+.botao-topo {
+  background: #f6ac00;
+  color: #0a1a2b;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
 /* FOOTER */
 
 footer {
