@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Fale conosco</title>
 </head>
+
 <body>
     <header>
 
@@ -29,9 +31,45 @@
     </header>
 
     <main>
+        <form>
 
+            <label>Nome</label><br>
+            <input type="text" required><br>
+
+            <label>E-mail</label><br>
+            <input type="email" placeholder="exemplo@email.com" required><br>
+
+            <label>Telefone</label><br>
+            <input type="tel" placeholder="XX XXXXX-XXXX" required><br>
+
+            <label>CNPJ</label><br>
+            <input type="text" placeholder="00.000.000/0000-00" required><br>
+
+            <label for="setores">Qual o setor da sua empresa?</label><br>
+            <select id="setores" name="setores" required>
+                <option selected>Selecione</option>
+                <option value="setor1">Setor 1</option>
+                <option value="setor2">Setor 2</option>
+                <option value="setor3">Setor 3</option>
+            </select><br>
+
+            <label for="tamanho">Qual o tamanho da sua empresa?</label><br>
+            <select id="tamanho" name="tamanho" required>
+                <option selected>Selecione</option>
+                <option value="grande">Grande</option>
+                <option value="medio">Medio</option>
+                <option value="pequeno">Pequeno</option>
+            </select>
+
+            <fieldset>
+                <legend>Voce Participa do HUBS?</legend>
+                <input type="radio"><label>Sim</label>
+                <input type="radio"><label>Não</label>
+            </fieldset>
+            
+        </form>
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-column logo-column">
@@ -59,9 +97,12 @@
                     <li>Rua CR7 vasco 2026</li>
                 </ul>
                 <div class="social-icons">
-                    <a href="#"><img src="imagens/footer_icones/instagram-brands-solid-full.svg" alt="ícone Instagram"></a>
-                    <a href="#"><img src="imagens/footer_icones/facebook-brands-solid-full.svg" alt="ícone Facebook"></a>
-                    <a href="#"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg" alt="ícone Whatsapp"></a>
+                    <a href="#"><img src="imagens/footer_icones/instagram-brands-solid-full.svg"
+                            alt="ícone Instagram"></a>
+                    <a href="#"><img src="imagens/footer_icones/facebook-brands-solid-full.svg"
+                            alt="ícone Facebook"></a>
+                    <a href="#"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg"
+                            alt="ícone Whatsapp"></a>
                 </div>
             </div>
 
@@ -82,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>
