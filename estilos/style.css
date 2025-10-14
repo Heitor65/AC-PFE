@@ -1,4 +1,9 @@
-body { font-family: Arial, sans-serif; background: #08264b; color: #fff; margin: 0%;}
+body {
+    font-family: Arial, sans-serif;
+    background: #08264b;
+    color: #fff;
+    margin: 0%;
+}
 
 /* HEADER*/
 
@@ -12,20 +17,20 @@ body { font-family: Arial, sans-serif; background: #08264b; color: #fff; margin:
     align-items: center;
 }
 
-.logo-topo img { 
-    height: 50px; 
+.logo-topo img {
+    height: 50px;
 }
 
-.menu { 
-    list-style: none; 
-    display: flex; 
-    gap: 18px; 
-    margin: 0; 
-    padding: 0; 
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
 }
 
-.menu li { 
-    list-style: none; 
+.menu li {
+    list-style: none;
 }
 
 /* ESTILOS DOS LINKS COM ANIMAÇÃO */
@@ -78,37 +83,37 @@ body { font-family: Arial, sans-serif; background: #08264b; color: #fff; margin:
 /* FOOTER */
 
 footer {
-    background-color: #122f66; 
-    color: #ecf0f1; 
-    padding: 50px; 
-    font-family: 'Arial', sans-serif; 
+    background-color: #122f66;
+    color: #ecf0f1;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
 }
 
 
 .footer-container {
     display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-    gap: 70px; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px;
     margin-bottom: 30px;
 }
 
 /* Estilo para cada coluna do footer */
 .footer-column {
-    flex: 1; 
-    min-width: 220px; 
+    flex: 1;
+    min-width: 220px;
 }
 
 /* Coluna do logo */
 .logo-column .footer-logo {
-    max-width: 150px; 
+    max-width: 150px;
     margin-bottom: 15px;
 }
 
 .logo-column p {
     font-size: 0.9rem;
     line-height: 1.5;
-    color: #bdc3c7; 
+    color: #bdc3c7;
 }
 
 /* Títulos das colunas (Navegação, Contato, etc.) */
@@ -116,34 +121,35 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #ffffff;
-    border-bottom: 2px solid #3498db; /* Linha sutil abaixo do título */
+    border-bottom: 2px solid #3498db;
+    /* Linha sutil abaixo do título */
     padding-bottom: 10px;
     font-weight: 600;
 }
 
 /* Listas de links */
 .footer-column ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 12px; 
-    color: #bdc3c7; 
+    margin-bottom: 12px;
+    color: #bdc3c7;
 }
 
 /* Estilo dos links do footer */
 .footer-column ul li a {
     color: #ecf0f1;
     text-decoration: none;
-    transition: color 0.3s ease, padding-left 0.3s ease; 
+    transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 /* Efeito ao passar o mouse sobre os links */
 .footer-column ul li a:hover {
-    color: #3498db; 
-    padding-left: 5px; 
+    color: #3498db;
+    padding-left: 5px;
 }
 
 
@@ -155,16 +161,16 @@ footer {
 
 .social-icons a {
     display: inline-block;
-    margin-right: 15px; 
-    transition: transform 0.3s ease; 
+    margin-right: 15px;
+    transition: transform 0.3s ease;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .social-icons img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
 }
 
@@ -172,7 +178,7 @@ footer {
 /* LINHA E DIREITOS AUTORAIS */
 
 .footer-bottom {
-    border-top: 1px solid #7f8c8d; 
+    border-top: 1px solid #7f8c8d;
     padding-top: 20px;
     margin-top: 20px;
     font-size: 0.85rem;
@@ -183,15 +189,19 @@ footer {
 /*  RESPONSIVIDADE (CELULAR) */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Empilha as colunas verticalmente */
-        gap: 40px; /* Aumenta o espaço entre as seções empilhadas */
+        flex-direction: column;
+        /* Empilha as colunas verticalmente */
+        gap: 40px;
+        /* Aumenta o espaço entre as seções empilhadas */
     }
 
     .footer-column {
-        min-width: 100%; /* Faz cada coluna ocupar a largura total */
+        min-width: 100%;
+        /* Faz cada coluna ocupar a largura total */
     }
-    
+
     footer {
-        padding: 40px 8% 20px 8%; /* Ajusta o padding para telas menores */
+        padding: 40px 8% 20px 8%;
+        /* Ajusta o padding para telas menores */
     }
 }

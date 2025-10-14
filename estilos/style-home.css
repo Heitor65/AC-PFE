@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
 }
+
 .hero h2 {
     color: white;
     font-size: 3em;
@@ -39,35 +40,35 @@
 .sobre {
     background-color: #002355;
     color: #fff;
-    padding: 60px 20px;
+    padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
 }
 
-.sobre > div {
+.sobre>div {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;  
-    justify-content: center; 
-    gap: 50px; 
-    max-width: 1100px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 
 .sobre h2 {
     font-size: 4rem;
-    margin: 0 0 20px 0;
-    padding: 0;
+    margin: 20px;
+    padding-bottom: 60px;
     line-height: 1.1;
 }
 
 .sobre p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
-    margin: 0;
+    margin: 0 0 0 20px;
     color: #fff;
 }
 
@@ -78,7 +79,7 @@
 }
 
 .dados {
-    background-color: #E6AD2D; 
+    background-color: #E6AD2D;
     padding: 50px 20px;
     text-align: center;
 }
@@ -93,7 +94,6 @@
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-wrap: wrap; 
 }
 
 .dado-card {
@@ -121,12 +121,12 @@
 }
 
 .cases-sucesso {
-    background-color: #002355; 
+    background-color: #002355;
     padding: 50px 40px;
     /* Precisei por um codigo inline para deixar aquele fundo cinza na frente do fundo azul */
 }
 
-.cases-sucesso div{
+.cases-sucesso div {
     padding: 1.4rem;
     border-radius: 30px;
 }
@@ -140,31 +140,37 @@
 
 .cases-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 30px; /* Espaçamento entre os cards */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    gap: 30px;
+    /* Espaçamento entre os cards */
     background-color: transparent;
 }
 
 .case-card {
     background-color: #fff;
     border-radius: 12px;
-    overflow: hidden; /* Garante que a imagem não vaze das bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    /* Garante que a imagem não vaze das bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
 
 .case-card img {
     width: 100%;
-    height: 150px; /* Altura fixa para as imagens */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    height: 150px;
+    /* Altura fixa para as imagens */
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço sem distorcer */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
 
 .case-content {
     padding: 20px;
-    position: relative; /* Necessário para posicionar o botão de seta */
+    position: relative;
+    /* Necessário para posicionar o botão de seta */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -194,29 +200,32 @@
     font-size: 1.5rem;
     line-height: 35px;
     text-align: center;
+
     
-    /* Posiciona no canto inferior direito */
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
 
 .relatos {
-    background-color: #0033ff; /* Fundo azul vibrante */
+    background-color: #1145FF;
     padding: 60px 20px;
     text-align: center;
     color: #fff;
 }
 
 .relatos h2 {
-    color: #E6AD2D; /* Cor dourada do título */
+    color: #E6AD2D;
+    /* Cor dourada do título */
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
 .relato-card {
-    max-width: 800px; /* Largura máxima do texto */
-    margin: 0 auto; /* Centraliza o card */
+    max-width: 800px;
+    /* Largura máxima do texto */
+    margin: 0 auto;
+    /* Centraliza o card */
 }
 
 .relato-card .quote {
@@ -224,7 +233,8 @@
     font-style: italic;
     line-height: 1.6;
     margin: 0 0 25px 0;
-    color: #f0f0f0; /* Cor do texto do relato */
+    color: #f0f0f0;
+    /* Cor do texto do relato */
 }
 
 .relato-card .author {
@@ -243,9 +253,42 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: lightgray /* Cor dos pontos inativos */
+    background-color: lightgray
+        /* Cor dos pontos inativos */
 }
 
 .pagination-dots .dot.active {
-    background-color: #fff; /* Cor do ponto ativo */
+    background-color: #fff;
+    /* Cor do ponto ativo */
 }
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 7em;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .sobre>div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre p {
+        margin: 0;
+    }
+
+    .dados-container {
+        flex-wrap: wrap;
+    }
+
+    .cases-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em vez de 3 */
+    }
+}
+
