@@ -1,0 +1,35 @@
+.hero {
+    background-image: url('../imagens/IBMEC_SAO_PAULO_HERO.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 10em;
+    margin: 0;
+    line-height: 0.95;
+}
+.hero h2 {
+    color: white;
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: 4em;
+}
+
+.hero a {
+    background-color: blue;
+    color: #fff;
+    padding: 0.85rem;
+    border-radius: 20px;
+    font-size: 2em;
+    text-decoration: none;
+}
