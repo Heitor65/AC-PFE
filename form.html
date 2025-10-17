@@ -12,7 +12,7 @@
 <body>
     <header class="topo">
     <div class="logo-topo">
-      <a href="index.html"><img src="imagens/logo-ibmec.png" alt="Logo Ibmec"></a>
+      <img src="imagens/logo-ibmec.png" alt="Logo Ibmec">
     </div>
     <nav>
       <ul class="menu">
@@ -27,49 +27,94 @@
   </header>
 
     <main>
-        <form>
 
-            <label>Nome</label><br>
-            <input type="text" required><br>
+        <section class="cases-hero">
+            <div class="cases-hero-content">
+                <h1>Seu Futuro Está Aqui</h1>
+                <p>No mundo dos negócios, inovação e estratégia caminham lado a lado. Aqui, você encontra projetos pensados para impulsionar resultados, fortalecer sua marca e abrir novas oportunidades. Nossa missão é transformar ideias em soluções práticas, ajudando sua empresa a se destacar e crescer de forma sustentável.</p>
+            </div>
+        </section>
 
-            <label>E-mail</label><br>
-            <input type="email" placeholder="exemplo@email.com" required><br>
+        <section class="secao-contato">
+      <h1>Entre em contato conosco</h1>
+      
+      <form action="#" method="POST" class="form-contato">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome">
+        </div>
 
-            <label>Telefone</label><br>
-            <input type="tel" placeholder="XX XXXXX-XXXX" required><br>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
 
-            <label>CNPJ</label><br>
-            <input type="text" placeholder="00.000.000/0000-00" required><br>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+        </div>
 
-            <label for="setores">Qual o setor da sua empresa?</label><br>
-            <select id="setores" name="setores" required>
-                <option selected>Selecione</option>
-                <option value="setor1">Setor 1</option>
-                <option value="setor2">Setor 2</option>
-                <option value="setor3">Setor 3</option>
-            </select><br>
+        <div class="form-group">
+          <label for="cnpj">CNPJ</label>
+          <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ">
+        </div>
 
-            <label for="tamanho">Qual o tamanho da sua empresa?</label><br>
-            <select id="tamanho" name="tamanho" required>
-                <option selected>Selecione</option>
-                <option value="grande">Grande</option>
-                <option value="medio">Medio</option>
-                <option value="pequeno">Pequeno</option>
-            </select>
+        <div class="form-group">
+          <label for="setor">Qual o Setor da sua empresa?</label>
+          <select id="setor" name="setor">
+            <option value="" disabled selected>Selecione</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="varejo">Varejo</option>
+            <option value="saude">Saúde</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
 
-            <fieldset>
-                <legend>Voce Participa do HUBS?</legend>
-                <input type="radio"><label>Sim</label>
-                <input type="radio"><label>Não</label>
-            </fieldset>
-            
-        </form>
+        <div class="form-group">
+          <label for="cargo">Qual seu cargo?</label>
+          <select id="cargo" name="cargo">
+            <option value="" disabled selected>Selecione</option>
+            <option value="diretor">Diretor(a)</option>
+            <option value="gerente">Gerente</option>
+            <option value="analista">Analista</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tamanho">Qual o tamanho da sua empresa?</label>
+          <select id="tamanho" name="tamanho">
+            <option value="" disabled selected>Selecione</option>
+            <option value="1-11 funcionários">1-11 funcionários</option>
+            <option value="12-20 funcionários">12-20 funcionários</option>
+            <option value="Mais de 20 funcionários">Mais de 20 funcionários</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group radio-group">
+          <legend>Você participa do Hubs?</legend>
+          <div class="radio-options">
+            <div class="radio-option">
+              <input type="radio" id="hubs-sim" name="hubs" value="sim">
+              <label for="hubs-sim">Sim</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="hubs-nao" name="hubs" value="nao">
+              <label for="hubs-nao">Não</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Enviar Formulário</button>
+      </form>
+    </section>
+
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="footer-column logo-column">
-                <img src="imagens/logo-ibmec.png" alt="logo da Ibmec" class="footer-logo">
+                <img src="imagens/logo-ibmec-fundo.png" alt="logo da Ibmec" class="footer-logo">
                 <p>Alguma coisa sobre a empresa.</p>
             </div>
 
