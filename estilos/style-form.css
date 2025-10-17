@@ -1,151 +1,175 @@
+/* ======= SEÇÃO HERO (CABEÇALHO PRINCIPAL DOS CASES) ======= */
 .cases-hero {
-    position: relative;
-    background-image: url('../imagens/IBMEC_BARRA.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
-    color: #ffffff;
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta dentro */
+    background-image: url('../imagens/IBMEC_BARRA.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área sem distorcer */
+    background-position: center; /* Centraliza a imagem de fundo */
+    min-height: 80vh; /* Define altura mínima de 80% da tela */
+    color: #ffffff; /* Define cor do texto como branco */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: flex; /* Usa flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
 }
 
-
+/* Conteúdo dentro da seção hero */
 .cases-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 950px;
-    padding: 20px;
+    position: relative; /* Mantém posição padrão, mas permite z-index */
+    z-index: 2; /* Garante que o texto fique acima da imagem de fundo */
+    max-width: 950px; /* Limita a largura máxima para boa legibilidade */
+    padding: 20px; /* Espaçamento interno */
 }
 
+/* Título principal dentro do hero */
 .cases-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin-bottom: 25px;
+    font-size: 3.5rem; /* Tamanho grande para destaque */
+    font-weight: 600; /* Deixa a fonte mais “forte” */
+    margin-bottom: 25px; /* Espaço abaixo do título */
 }
 
+/* Parágrafo do hero */
 .cases-hero p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin: 0;
+    font-size: 1.4rem; /* Tamanho do texto */
+    line-height: 1.6; /* Espaçamento entre linhas para facilitar leitura */
+    margin: 0; /* Remove margens padrão */
 }
 
+
+/* ======= CONFIGURAÇÕES GERAIS DO SITE ======= */
 body {
-    background-color: #002355;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    background-color: #002355; /* Fundo azul escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif; /* Fonte principal */
 }
 
+
+/* ======= SEÇÃO DE CONTATO ======= */
 .secao-contato {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 600px; /* Limita a largura do formulário */
+    margin: 50px auto; /* Centraliza e adiciona espaçamento superior/inferior */
+    padding: 20px; /* Espaçamento interno */
 }
 
+/* Título da seção de contato */
 .secao-contato h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    text-align: center; /* Centraliza o texto */
+    font-size: 2.5rem; /* Tamanho grande do título */
+    margin-bottom: 40px; /* Espaço abaixo do título */
 }
 
+/* Grupos de campos do formulário */
 .form-group, .radio-group {
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Espaçamento entre os campos */
 }
 
+/* Rótulos e legendas */
 .form-group label, .radio-group legend {
-    display: block;
-    margin-bottom: 8px;
+    display: block; /* Cada label ocupa uma linha */
+    margin-bottom: 8px; /* Espaço abaixo do texto */
     font-size: 1rem;
 }
 
+/* Campos de texto, e-mail, telefone e selects */
 input[type="text"], input[type="email"], input[type="tel"], select {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ffffff;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 15px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Fundo branco */
     font-size: 1rem;
-    color: grey;
-    box-sizing: border-box;
+    color: grey; /* Texto cinza */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
 }
 
+/* Cor do texto de placeholder */
 input::placeholder {
     color: grey;
 }
 
+/* ======= RADIO BUTTONS ======= */
 .radio-group legend {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaço abaixo do título do grupo */
 }
 
+/* Contêiner das opções de rádio */
 .radio-options {
-    display: flex;
-    gap: 30px;
+    display: flex; /* Exibe lado a lado */
+    gap: 30px; /* Espaço entre as opções */
 }
 
+/* Cada opção de rádio */
 .radio-option {
     display: flex;
-    align-items: center;
+    align-items: center; /* Alinha o círculo e o texto verticalmente */
     gap: 10px;
 }
 
+/* Estilo personalizado do botão de rádio */
 input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none; /* Compatibilidade com Safari */
     width: 24px;
     height: 24px;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
+    border: 2px solid #ffffff; /* Borda branca */
+    border-radius: 50%; /* Forma circular */
     position: relative;
-    cursor: pointer;
+    cursor: pointer; /* Mostra o cursor de clique */
 }
 
+/* Quando o rádio está selecionado */
 input[type="radio"]:checked::before {
-    content: '';
+    content: ''; /* Cria o ponto interno */
     display: block;
     width: 14px;
     height: 14px;
-    background-color: #000000;
+    background-color: #000000; /* Cor do ponto */
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centraliza o ponto */
 }
 
+
+/* ======= BOTÃO DE ENVIO ======= */
 .btn-submit {
-    width: 100%;
+    width: 100%; /* Ocupa toda a largura */
     padding: 15px;
-    background-color: #E6AD2D; 
-    color: #002355;
+    background-color: #E6AD2D; /* Amarelo */
+    color: #002355; /* Texto azul escuro */
     border: none;
-    border-radius: 8px;
+    border-radius: 8px; /* Bordas arredondadas */
     font-size: 1.1rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer; /* Mostra o cursor de clique */
     margin-top: 20px;
 }
 
+
+/* ======= ESTILOS RESPONSIVOS (TELAS ATÉ 853px) ======= */
 @media (max-width: 853px) {
     
+    /* Ajuste do hero */
     .cases-hero {
-        height: 40vh;
-    }
-    .cases-hero h1 {
-        font-size: 3rem;
+        height: 40vh; /* Diminui a altura em telas menores */
     }
 
-    
+    .cases-hero h1 {
+        font-size: 3rem; /* Reduz o tamanho do título */
+    }
+
+    /* Ajustes de margens e tamanhos de categorias */
     .category-slider {
-        margin: 0 10px; 
-        padding: 20px;
+        margin: 0 10px; /* Menor espaçamento lateral */
+        padding: 20px; /* Menos espaçamento interno */
     }
 
     .category-slider h2 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem; /* Reduz o título das categorias */
     }
 
+    /* Cards menores para se ajustar ao espaço */
     .case-card {
         flex: 0 0 250px; 
     }

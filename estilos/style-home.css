@@ -1,68 +1,71 @@
+/* ======= SEÇÃO HERO (CABEÇALHO PRINCIPAL) ======= */
 .hero {
-    background-image: url('../imagens/IBMEC_SAO_PAULO_HERO.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../imagens/IBMEC_SAO_PAULO_HERO.png'); /* Imagem de fundo principal */
+    background-size: cover; /* Faz a imagem ocupar todo o espaço sem distorcer */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
 
-    min-height: 100vh;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Usa flexbox para centralizar os elementos */
+    flex-direction: column; /* Coloca elementos um abaixo do outro */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
 
-    padding-bottom: 3rem;
-    margin-bottom: 0;
+    padding-bottom: 3rem; /* Espaço inferior */
+    margin-bottom: 0; /* Remove margens extras */
 }
 
 .hero h1 {
-    color: white;
-    font-size: 10em;
+    color: white; /* Texto branco */
+    font-size: 10em; /* Título gigante para destaque */
     margin: 0;
     padding: 0;
 }
 
 .hero h2 {
     color: white;
-    font-size: 3em;
+    font-size: 3em; /* Subtítulo menor, mas ainda grande */
 }
 
 .hero a {
-    background-color: #002355;
-    color: #fff;
-    padding: 0.85rem;
-    border-radius: 20px;
+    background-color: #002355; /* Azul institucional */
+    color: #fff; /* Texto branco */
+    padding: 0.85rem; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
     font-size: 2em;
-    text-decoration: none;
-    margin-top: 7rem;
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-top: 7rem; /* Distância entre o link e os títulos */
 }
 
+
+/* ======= SEÇÃO SOBRE ======= */
 .sobre {
-    background-color: #002355;
-    color: #fff;
+    background-color: #002355; /* Fundo azul escuro */
+    color: #fff; /* Texto branco */
     padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 50vh; /* Altura mínima */
 }
 
-.sobre>div {
+/* Contêiner interno da seção “sobre” */
+.sobre > div {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Coloca texto e imagem lado a lado */
     align-items: flex-start;
     justify-content: center;
-    gap: 50px;
+    gap: 50px; /* Espaço entre os elementos */
     width: 100%;
     padding-bottom: 20px;
 }
 
-
 .sobre h2 {
-    font-size: 4rem;
+    font-size: 4rem; /* Título grande */
     margin: 20px;
     padding-bottom: 60px;
-    line-height: 1.1;
+    line-height: 1.1; /* Menor espaçamento entre linhas */
 }
 
 .sobre p {
@@ -73,29 +76,33 @@
 }
 
 .sobre img {
-    width: 100%;
-    height: 30rem;
-    border-radius: 8px;
+    width: 100%; /* A imagem ocupa toda a largura disponível */
+    height: 30rem; /* Altura fixa */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
+
+/* ======= SEÇÃO DE DADOS / ESTATÍSTICAS ======= */
 .dados {
-    background-color: #E6AD2D;
+    background-color: #E6AD2D; /* Amarelo institucional */
     padding: 50px 20px;
     text-align: center;
 }
 
 .dados h2 {
-    color: #000;
+    color: #000; /* Texto preto */
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
+/* Contêiner dos cartões de dados */
 .dados-container {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
+/* Cartões individuais */
 .dado-card {
     background-color: #ffffff;
     color: #000000;
@@ -103,9 +110,8 @@
     padding: 20px;
     min-width: 200px;
     min-height: 120px;
-    flex: 1;
+    flex: 1; /* Todos crescem igualmente */
     max-width: 220px;
-
 
     display: flex;
     justify-content: center;
@@ -120,12 +126,16 @@
     color: #000;
 }
 
+
+/* ======= SEÇÃO DE CASES DE SUCESSO ======= */
 .cases-sucesso {
-    background-color: #002355;
+    background-color: #002355; /* Fundo azul */
     padding: 50px 40px;
-    /* Precisei por um codigo inline para deixar aquele fundo cinza na frente do fundo azul */
+    /* O comentário indica que foi preciso usar código inline
+       para colocar uma camada cinza sobre o fundo azul */
 }
 
+/* Bloco interno com fundo cinza */
 .cases-sucesso div {
     padding: 1.4rem;
     border-radius: 30px;
@@ -139,18 +149,20 @@
     background-color: transparent;
 }
 
+/* Grade com os cards dos cases */
 .cases-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
     gap: 30px;
     background-color: transparent;
 }
 
+/* Card de cada case */
 .case-card {
-    background-color: #757575;
+    background-color: #757575; /* Cinza */
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px black;
+    box-shadow: 0 4px 10px black; /* Sombra */
     display: flex;
     flex-direction: column;
 }
@@ -158,7 +170,7 @@
 .case-card img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    object-fit: cover; /* Corta a imagem mantendo proporção */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -185,6 +197,7 @@
     flex-grow: 1;
 }
 
+/* Link em forma de bolinha no canto inferior direito do card */
 .case-link {
     background-color: #e0e0e0;
     color: #555;
@@ -195,31 +208,33 @@
     font-size: 1.5rem;
     line-height: 35px;
     text-align: center;
-
     
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
 
+
+/* ======= SEÇÃO DE RELATOS / DEPOIMENTOS ======= */
 .relatos {
-    background-color: #1145FF;
+    background-color: #1145FF; /* Azul mais claro */
     padding: 60px 20px;
     text-align: center;
     color: #fff;
 }
 
 .relatos h2 {
-    color: #E6AD2D;
+    color: #E6AD2D; /* Título amarelo */
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
 .relato-card {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
+/* Texto do relato */
 .relato-card .quote {
     font-size: 1.3rem;
     font-style: italic;
@@ -228,31 +243,38 @@
     color: #f0f0f0;
 }
 
+/* Nome do autor do relato */
 .relato-card .author {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 0 0 30px 0;
 }
 
+/* Bolinhas de navegação (paginador) */
 .pagination-dots {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
+/* Cada bolinha */
 .pagination-dots .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: lightgray
+    background-color: lightgray;
 }
 
+/* Bolinha ativa */
 .pagination-dots .dot.active {
     background-color: #fff;
-
 }
 
+
+/* ======= RESPONSIVIDADE (TELAS ATÉ 992px) ======= */
 @media (max-width: 992px) {
+
+    /* Reduz tamanho dos títulos do hero */
     .hero h1 {
         font-size: 7em;
         text-align: center;
@@ -263,7 +285,8 @@
         text-align: center;
     }
 
-    .sobre>div {
+    /* Ajusta a seção sobre para coluna (imagem embaixo do texto) */
+    .sobre > div {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -273,9 +296,8 @@
         margin: 0;
     }
 
-  
+    /* Diminui as colunas dos cases de sucesso */
     .cases-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em vez de 3 */
     }
 }
-
