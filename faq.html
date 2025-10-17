@@ -3,115 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style-faq.css">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <title>FAQ</title>
-    <style>
-main {
-    background-color: rgb(0, 35, 85);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-main > h1 {
-    font-size: 3em;
-}
-main > div {
-    align-self: flex-end;
-    margin: 5em;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-}
-#duvidaDiv {
-    background-color: #E6AD2D;
-    width: 100%;
-    align-self: center;
-}
-#duvidaDiv > div{
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    border-radius: 1em;
-    color: black;
-    text-align: center;
-    justify-self: center;
-    width: 40em;
-    margin: 5em;
-    min-height: 20em;
-}
-#selection{
-    align-self: flex-start;
-}
-input{
-    font-size: larger;
-}
-input:nth-of-type(1) {
-    width: 25em;
-}
-    </style>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/style-faq.css">
+    <title>FAQ - Perguntas Frequentes</title>
 </head>
 
 <body>
     
     <header class="topo">
-    <div class="logo-topo">
-      <img src="imagens/logo-ibmec.png" alt="Logo Ibmec">
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cases.html">Cases</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="form.html" class="botao-topo">Fale conosco</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+        <div class="logo-topo">
+            <img src="imagens/logo-ibmec.png" alt="Logo Ibmec">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faq.html" aria-current="page">FAQ</a></li> <li><a href="contato.html">Contato</a></li>
+                <li><a href="form.html" class="botao-topo">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main>
         <h1>Perguntas Frequentes</h1>
-        <h2>Encontre respostas rápidas para as principais dúvidas.</h2>
-        <div>
-            <h1>Geral</h1><hr>
-            <p>O serviço é grauito para as empresas?</p><hr>
-            <p>Preciso ter CNPJ para enviar um problema?</p><hr>
-            <p>Pequenos negócios e startups podem participar?</p><hr>
-            <p>Os projetos enviados ficam públicos?</p><hr>
-            <p>Posso acompanhar o andamento do meu problema depois de enviado?</p><hr>
-        </div>
-        <div id="selection">
-        </div>
-        <div>
-            <h1>Sobre</h1><hr>
-            <p>Quem está por trás da plataforma?</p><hr>
-            <p>Qual é a missão do projeto?</p><hr>
-            <p>Como vocês selecionam os parceiros que participam?</p><hr>
-            <p>Como posso entrar em contato para mais informações?</p><hr>
-        </div>
-        <div>
-            <h1>Processo</h1><hr>
-            <p>Como funciona o envio de um problema pela empresa?</p><hr>
-            <p>O que acontece após o envio do formulário?</p><hr>
-            <p>Há algum prazo para a universidade dar retorno?</p><hr>
-            <p>À quem pertence os projetos realizados?</p><hr>
-        </div>
-        <div id="duvidaDiv">
-            <div>
-                <h1>Não achou a resposta para sua dúvida?</h1>
-                <h3>Digite aqui a sua pergunta!</h3>
+        <p class="subtitle">Encontre respostas rápidas para as principais dúvidas.</p> <section class="faq-section">
+            <h2 id="geral-heading">Geral</h2>
+            <hr>
+            <dl aria-labelledby="geral-heading"> <dt>O serviço é gratuito para as empresas?</dt>
+                <dd>Sim, o serviço de envio de problemas é gratuito.</dd>
+                <dt>Preciso ter CNPJ para enviar um problema?</dt>
+                <dd>Sim, é necessário ter um CNPJ válido para formalizar o envio.</dd>
+                <dt>Pequenos negócios e startups podem participar?</dt>
+                <dd>Com certeza! Incentivamos a participação de todos os portes de empresas.</dd>
+                <dt>Os projetos enviados ficam públicos?</dt>
+                <dd>Não, os projetos são tratados com confidencialidade e não são divulgados publicamente sem consentimento.</dd>
+                <dt>Posso acompanhar o andamento do meu problema depois de enviado?</dt>
+                <dd>Sim, será fornecido um código de acompanhamento e acesso a um painel.</dd>
+            </dl>
+        </section>
+
+        <section class="faq-section">
+            <h2 id="sobre-heading">Sobre</h2>
+            <hr>
+            <dl aria-labelledby="sobre-heading">
+                <dt>Quem está por trás da plataforma?</dt>
+                <dd>A plataforma é uma iniciativa da instituição Ibmec.</dd>
+                <dt>Qual é a missão do projeto?</dt>
+                <dd>Conectar desafios do mercado com o conhecimento acadêmico.</dd>
+                <dt>Como vocês selecionam os parceiros que participam?</dt>
+                <dd>Os parceiros são selecionados com base na relevância e no alinhamento com os objetivos da instituição.</dd>
+                <dt>Como posso entrar em contato para mais informações?</dt>
+                <dd>Você pode usar a seção "Contato" ou o formulário "Fale Conosco".</dd>
+            </dl>
+        </section>
+
+        <section class="faq-section">
+            <h2 id="processo-heading">Processo</h2>
+            <hr>
+            <dl aria-labelledby="processo-heading">
+                <dt>Como funciona o envio de um problema pela empresa?</dt>
+                <dd>Basta preencher o formulário na página "Fale Conosco" detalhando o desafio.</dd>
+                <dt>O que acontece após o envio do formulário?</dt>
+                <dd>Nossa equipe fará uma triagem e entrará em contato em até 5 dias úteis.</dd>
+                <dt>Há algum prazo para a universidade dar retorno?</dt>
+                <dd>O primeiro contato ocorre em até 5 dias úteis após a submissão.</dd>
+                <dt>À quem pertence os projetos realizados?</dt>
+                <dd>A propriedade intelectual é definida em contrato antes do início do projeto, geralmente em conjunto.</dd>
+            </dl>
+        </section>
+
+        <section id="duvidaDiv">
+            <div class="duvida-box">
+                <h2>Não achou a resposta para sua dúvida?</h2>
+                <p>Digite aqui a sua pergunta!</p>
                 <form>
-                    <input type="text" id="duvida" placeholder="Mande aqui sua dúvida" required>
-                    <input type="submit">
-                </form>
+                    <label for="duvida" class="sr-only">Sua Dúvida</label> <input type="text" id="duvida" placeholder="Mande aqui sua dúvida" required>
+                    <input type="submit" value="Enviar Dúvida"> </form>
             </div>
-        </div>
+        </section>
     </main>
+    
     <footer>
         <div class="footer-container">
             <div class="footer-column logo-column">
@@ -125,7 +97,7 @@ input:nth-of-type(1) {
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cases.html">Cases</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="faq.html" aria-current="page">FAQ</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="form.html">Fale Conosco</a></li>
                 </ul>
@@ -133,15 +105,16 @@ input:nth-of-type(1) {
 
             <div class="footer-column">
                 <h3>Contato</h3>
-                <ul>
-                    <li>email@email.com.br</li>
-                    <li>(99) 99999-9999</li>
-                    <li>Rua CR7 vasco 2026</li>
-                </ul>
+                <address> <ul>
+                        <li>email@email.com.br</li>
+                        <li>(99) 99999-9999</li>
+                        <li>Rua CR7 vasco 2026</li>
+                    </ul>
+                </address>
                 <div class="social-icons">
-                    <a href="#"><img src="imagens/footer_icones/instagram-brands-solid-full.svg" alt="ícone Instagram"></a>
-                    <a href="#"><img src="imagens/footer_icones/facebook-brands-solid-full.svg" alt="ícone Facebook"></a>
-                    <a href="#"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg" alt="ícone Whatsapp"></a>
+                    <a href="#" title="Instagram"><img src="imagens/footer_icones/instagram-brands-solid-full.svg" alt="ícone Instagram"></a>
+                    <a href="#" title="Facebook"><img src="imagens/footer_icones/facebook-brands-solid-full.svg" alt="ícone Facebook"></a>
+                    <a href="#" title="Whatsapp"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg" alt="ícone Whatsapp"></a>
                 </div>
             </div>
 
